@@ -1,0 +1,233 @@
+html {
+    background: url(../texture/index-bg.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#renderCanvas {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+}
+
+.app-title {
+    color: #fff;
+    padding: 18px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.permissionBtn {
+    margin-top: 50px;
+    background-color: #092731;
+    font-size: 20px;
+    /* color: white; */
+    padding: 12px;
+    display: block;
+    padding: 16px;
+    /* width: 70px; */
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px 0px;
+    border-radius: 8px;
+    object-fit: contain;
+    background: rgb(255, 255, 255);
+}
+
+#descContainer {
+    background: #000000;
+    padding: 10px;
+    border-radius: 12px;
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    left: 30px;
+    width: 500px;
+    height: 110px;
+    padding: 10px;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#settings{
+    padding: 10px;
+    border-radius: 12px;
+    position: absolute;
+    color: white;
+    bottom: 50px;
+    right: 0px;
+    width: 350px;
+    padding: 10px;
+    border-radius: 12px;
+    transition: opacity 0.5s ease-in-out;
+    text-align: right;
+    display: none;
+    font-size: 20px;
+}
+
+#locContainer {
+    background: #0000008e;
+    padding: 10px;
+    border-radius: 12px;
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    right: 0px;
+    width: 350px;
+    padding: 10px;
+    border-radius: 12px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#locData {
+    font-size: 20px;
+    padding: 3px;
+}
+
+#title {
+    font-size: 45px;
+    padding: 3px;
+}
+
+#desc {
+    font-size: 29px;
+    padding: 3px;
+    ;
+}
+
+#descContainer.show {
+    opacity: 1;
+}
+
+#loading {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+#loadingMsg {
+    font-size: 29px;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+}
+
+#loadingContainer {
+    top: 62%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    display: none;
+}
+
+
+.compass {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgb(91 91 91);
+    margin: auto;
+    background-color: #ffffffd4;
+    margin-top: 100px;
+}
+
+.compass>.arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 30px 20px 0 20px;
+    border-color: red transparent transparent transparent;
+    z-index: 1;
+}
+
+.compass>.compass-circle {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    background: url(../texture/compass.png) center no-repeat;
+    background-size: contain;
+}
+
+.start-btn-container {
+    width: 400px;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.start-calibration-btn {
+    width: 80%;
+    display: block;
+    margin: auto;
+    font-size: 25px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px 0px;
+    border-radius: 8px;
+    object-fit: contain;
+    background: rgb(255, 255, 255);
+}
+
+.calibration-info {
+    color: white;
+    background-color: #111111a1;
+    color: #fff;
+    padding: 18px;
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
