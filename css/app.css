@@ -82,7 +82,12 @@ html {
     transition: opacity 0.5s ease-in-out;
     text-align: right;
     display: none;
-    font-size: 20px;
+    font-size: 30px;
+}
+
+#settings input[type=checkbox]{
+    width: 22px;
+    height: 22px;
 }
 
 #locContainer {
