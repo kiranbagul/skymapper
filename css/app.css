@@ -54,15 +54,13 @@ html {
 }
 
 #descContainer {
-    background: #000000;
+    background: #000000ba;
     padding: 10px;
     border-radius: 12px;
     position: absolute;
     color: white;
     bottom: 0px;
     left: 30px;
-    width: 500px;
-    height: 110px;
     padding: 10px;
     border-radius: 12px;
     opacity: 0;
