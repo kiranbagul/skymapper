@@ -68,13 +68,13 @@ html {
 }
 
 #settings{
+    text-shadow: 1px 1px 14px #000000;
     padding: 10px;
     border-radius: 12px;
     position: absolute;
     color: white;
     bottom: 50px;
     right: 0px;
-    width: 350px;
     padding: 10px;
     border-radius: 12px;
     transition: opacity 0.5s ease-in-out;
