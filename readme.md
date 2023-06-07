@@ -1,1 +1,1 @@
-# skymapper dist repo
+# Skymapper dist repo
